@@ -19,7 +19,7 @@ const Book = () => {
         },
         onSubmit: (values) => {
         values.hotelId = id
-          fetch('http://localhost:4000/booking',{
+          fetch('https://burr-al-arab-server.onrender.com/booking',{
             method: 'POST',
             headers:{
               'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const Book = () => {
     })
 
     useEffect(() => {
-      fetch(`http://localhost:4000/currentbookings`,{
+      fetch(`https://burr-al-arab-server.onrender.com/currentbookings`,{
         method: 'POST',
         headers:{
           'Content-Type': 'application/json',

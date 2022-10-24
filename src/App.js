@@ -25,7 +25,7 @@ const auth = getAuth();
 
   useEffect(() => {
     if (user.email) {
-      fetch(`http://localhost:4000/getbookings/${user.email}`,{
+      fetch(`https://burr-al-arab-server.onrender.com/${user.email}`,{
         method:'GET',
         headers:{
           'Content-Type': 'application/json',
